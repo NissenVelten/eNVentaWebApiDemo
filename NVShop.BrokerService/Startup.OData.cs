@@ -45,9 +45,7 @@ namespace NVShop.BrokerService
                 }
 			};
 
-            var models = modelBuilder.GetEdmModels();
-
-            HttpConfig.MapVersionedODataRoutes("odata", "", models, new DefaultODataBatchHandler(httpServer));
+            HttpConfig.MapVersionedODataRoutes("odata", "", modelBuilder.GetEdmModels(), new DefaultODataBatchHandler(httpServer));
 		}
 		
 		private static void ConfigureODataServices(IContainerBuilder builder)

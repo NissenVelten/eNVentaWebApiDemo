@@ -73,9 +73,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="FluentValidation">
-      <Version>8.6.1</Version>
-    </PackageReference>
     <PackageReference Include="FluentValidation.ValidatorAttribute">
       <Version>8.6.0</Version>
     </PackageReference>

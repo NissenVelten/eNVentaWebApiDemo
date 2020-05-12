@@ -14,7 +14,10 @@ namespace NVShop.BrokerService
 		public static void ConfigureSwagger(IAppBuilder app)
 		{
 			//var apiExplorer = HttpConfig.AddVersionedApiExplorer(o => o.GroupNameFormat = "'v'VVV");
-			var apiExplorer = HttpConfig.AddODataApiExplorer(o => o.GroupNameFormat = "'v'VVV");
+			var apiExplorer = HttpConfig.AddODataApiExplorer(options =>
+            {
+                options.GroupNameFormat = "'v'VVV";
+            });
 
 			HttpConfig.EnableSwagger(
 				"{apiVersion}/swagger",
@@ -36,7 +39,7 @@ namespace NVShop.BrokerService
 								info.Version(group.Name, $"eNVenta eGate DataServices API {group.ApiVersion}")
 								   .Contact(c => c.Name("Nissen & Velten Software GmbH")
 								   .Email("support@nissen-velten.de"))
-								   .Description(description);
+                                   .Description(description);
 							}
 						});
 
@@ -44,9 +47,9 @@ namespace NVShop.BrokerService
 
 					swagger.OperationFilter<SwaggerDefaultValues>();
 
-					swagger.IncludeXmlComments(XmlCommentsFilePath);
+					//swagger.IncludeXmlComments(XmlCommentsFilePath);
 				})
-				.EnableSwaggerUi();
+				.EnableSwaggerUi(swagger => swagger.EnableDiscoveryUrlSelector());
 		}
 
 		static string XmlCommentsFilePath

@@ -52,7 +52,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.2.0" />
-    <PackageReference Include="FluentValidation" Version="8.6.1" />
     <PackageReference Include="FluentValidation.ValidatorAttribute" Version="8.6.0" />
     <PackageReference Include="FluentValidation.WebApi" Version="8.6.0" />
     <PackageReference Include="IQToolkit">
@@ -219,19 +218,6 @@
     <Compile Include="HttpBasicAuthorizeAttribute.cs" />
     <Compile Include="NVIdentityProvider.cs" />
     <Compile Include="QueryParamHelper.cs" />
-    <Compile Include="Singletons\ECAddressService.cs" />
-    <Compile Include="Singletons\ECAnalyticsService.cs" />
-    <Compile Include="Singletons\ECArchiveService.cs" />
-    <Compile Include="Singletons\ECBatchService.cs" />
-    <Compile Include="Singletons\ECMessageService.cs" />
-    <Compile Include="Singletons\ECDocumentService.cs" />
-    <Compile Include="Singletons\ECBudgetService.cs" />
-    <Compile Include="Singletons\ECLicenseService.cs" />
-    <Compile Include="Singletons\ECPriceService.cs" />
-    <Compile Include="Singletons\ECServerFileService.cs" />
-    <Compile Include="Singletons\ECShippingService.cs" />
-    <Compile Include="Singletons\ECVoucherService.cs" />
-    <Compile Include="Singletons\ECStockService.cs" />
     <Compile Include="Startup.AutoMapper.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ServiceConstants.cs" />
