@@ -19,6 +19,7 @@ namespace NVShop.Data.eNVenta.NVRepository
         }
 
         public abstract TNVQueryBuilder Query();
+        INVQueryBuilder<TNVEntity> INVQueryRepository<TNVEntity>.Query() => Query();
     }
 
     public abstract class NVQueryReadRepository<TNVEntity, TFSEntity, TKey, TNVQueryBuilder> : 

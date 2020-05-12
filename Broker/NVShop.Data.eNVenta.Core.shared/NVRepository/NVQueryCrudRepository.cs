@@ -21,5 +21,6 @@ namespace NVShop.Data.eNVenta.NVRepository
             : base(rep, mapper, util) { }
 
         public abstract TNVQueryBuilder Query();
+        INVQueryBuilder<TNVEntity> INVQueryRepository<TNVEntity>.Query() => Query();
     }
 }

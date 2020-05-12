@@ -6,10 +6,10 @@
         TNVQueryBuilder Query();
     }
 
-    public interface INVQueryRepository<TNVEntity, out TNVQueryBuilder>
+    public interface INVQueryRepository<TNVEntity, out TNVQueryBuilder> : INVQueryRepository<TNVEntity>
         where TNVQueryBuilder : INVQueryBuilder<TNVEntity>
     {
-        TNVQueryBuilder Query();
+        new TNVQueryBuilder Query();
     }
 
     public interface INVQueryRepository<TNVEntity>

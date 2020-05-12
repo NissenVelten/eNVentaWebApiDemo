@@ -46,8 +46,7 @@ namespace NVShop.BrokerService
 				cfg.ReportApiVersions = true;
 				cfg.AssumeDefaultVersionWhenUnspecified = true;
 				cfg.ApiVersionReader = ApiVersionReader.Combine(
-					new QueryStringApiVersionReader(),
-					new HeaderApiVersionReader("api-version", "x-ms-version")
+					new QueryStringApiVersionReader()
 				);
 
 				cfg.DefaultApiVersion = ApiVersions.V1;

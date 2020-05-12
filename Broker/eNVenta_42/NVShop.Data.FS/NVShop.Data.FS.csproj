@@ -80,6 +80,7 @@
       <HintPath>..\..\..\..\..\..\..\..\..\..\FS\Broker\eGate_38\assembly\FrameworkSystems.FrameworkExceptions.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="NV_Shop_Link_Root_I">
       <HintPath>..\..\..\..\..\..\..\..\..\..\FS\Broker\eGate_38\assembly\NV_Shop_Link_Root_I.dll</HintPath>
       <Private>False</Private>

@@ -59,7 +59,7 @@
             {
                 var builder = queryRep.Query();
 
-                if (string.IsNullOrEmpty(query))
+                if (!string.IsNullOrEmpty(query))
                 {
                     QueryParamHelper.Apply(builder, query);
                 }
