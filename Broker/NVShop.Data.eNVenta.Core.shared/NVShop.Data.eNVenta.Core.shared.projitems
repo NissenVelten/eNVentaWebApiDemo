@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>7395cae6-f6ca-4369-b593-62758b0cc1ad</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>NVShop.Data.eNVenta.Core.shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)NVQueryBuilder\NVQueryBuilderBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NVRepository\INVSelectRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NVRepository\NVBaseRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NVRepository\NVCrudRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NVRepository\NVQueryCrudRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NVRepository\NVQueryReadRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NVRepository\NVReadRepository.cs" />
+  </ItemGroup>
+</Project>

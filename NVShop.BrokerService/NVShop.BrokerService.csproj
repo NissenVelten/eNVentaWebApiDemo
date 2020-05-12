@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE9CF52D-77F2-48EB-B8E6-95D44787BFEA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NVShop.BrokerService</RootNamespace>
+    <AssemblyName>NVShop.BrokerService</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <PackageReference Include="FluentValidation" Version="8.6.1" />
+    <PackageReference Include="FluentValidation.ValidatorAttribute" Version="8.6.0" />
+    <PackageReference Include="FluentValidation.WebApi" Version="8.6.0" />
+    <PackageReference Include="IQToolkit">
+      <Version>1.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.Mvc.de">
+      <Version>5.2.7</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.OData">
+      <Version>7.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.OData.Versioning">
+      <Version>4.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.OData.Versioning.ApiExplorer">
+      <Version>4.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.7" />
+    <PackageReference Include="Microsoft.AspNet.Razor.de">
+      <Version>3.2.7</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client.de" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core.de" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Extensions.Compression.Server" Version="2.0.6" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Extensions.Compression.Server.Owin" Version="2.0.4" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.OData">
+      <Version>5.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.WebApi.OData.de">
+      <Version>5.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Owin" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Versioning" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Versioning.ApiExplorer" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.WebHost" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.WebHost.de" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.7" />
+    <PackageReference Include="Microsoft.Bcl" Version="1.1.10" />
+    <PackageReference Include="Microsoft.Bcl.Build" Version="1.0.21" />
+    <PackageReference Include="Microsoft.Bcl.Compression" Version="3.9.85" />
+    <PackageReference Include="Microsoft.Data.Edm" Version="5.8.4" />
+    <PackageReference Include="Microsoft.Data.OData" Version="5.8.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.2" />
+    <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="1.3.2" />
+    <PackageReference Include="Microsoft.OData.Core" Version="7.6.2" />
+    <PackageReference Include="Microsoft.OData.Edm" Version="7.6.2" />
+    <PackageReference Include="Microsoft.Owin" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Owin.Host.HttpListener" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Owin.Host.SystemWeb" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Owin.Hosting" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Owin.Security" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Owin.Security.OAuth" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Spatial" Version="7.6.2" />
+    <PackageReference Include="Microsoft.Web.Infrastructure" Version="1.0.0.0" />
+    <PackageReference Include="Microsoft.Win32.Primitives" Version="4.3.0" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Owin" Version="1.0" />
+    <PackageReference Include="Remotion.Linq" Version="2.2.0" />
+    <PackageReference Include="Swashbuckle.Core" Version="5.6.0" />
+    <PackageReference Include="Swashbuckle.OData" Version="3.5.0" />
+    <PackageReference Include="System.AppContext" Version="4.3.0" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="System.Collections.Concurrent" Version="4.3.0" />
+    <PackageReference Include="System.ComponentModel" Version="4.3.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+    <PackageReference Include="System.ComponentModel.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.Console" Version="4.3.1" />
+    <PackageReference Include="System.Diagnostics.Debug" Version="4.3.0" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="4.7.0" />
+    <PackageReference Include="System.Diagnostics.Tools" Version="4.3.0" />
+    <PackageReference Include="System.Diagnostics.Tracing" Version="4.3.0" />
+    <PackageReference Include="System.Globalization" Version="4.3.0" />
+    <PackageReference Include="System.Globalization.Calendars" Version="4.3.0" />
+    <PackageReference Include="System.Interactive" Version="4.0.0" />
+    <PackageReference Include="System.Interactive.Async" Version="4.0.0" />
+    <PackageReference Include="System.IO" Version="4.3.0" />
+    <PackageReference Include="System.IO.Compression" Version="4.3.0" />
+    <PackageReference Include="System.IO.Compression.ZipFile" Version="4.3.0" />
+    <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
+    <PackageReference Include="System.IO.FileSystem.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.Linq" Version="4.3.0" />
+    <PackageReference Include="System.Linq.Expressions" Version="4.3.0" />
+    <PackageReference Include="System.Net.Primitives" Version="4.3.1" />
+    <PackageReference Include="System.Net.Sockets" Version="4.3.0" />
+    <PackageReference Include="System.ObjectModel" Version="4.3.0" />
+    <PackageReference Include="System.Reflection" Version="4.3.0" />
+    <PackageReference Include="System.Reflection.Extensions" Version="4.3.0" />
+    <PackageReference Include="System.Reflection.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.Resources.ResourceManager" Version="4.3.0" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.1" />
+    <PackageReference Include="System.Runtime.Handles" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Numerics" Version="4.3.0" />
+    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.1" />
+    <PackageReference Include="System.Security.Cryptography.Encoding" Version="4.3.0" />
+    <PackageReference Include="System.Security.Cryptography.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.Security.Cryptography.X509Certificates" Version="4.3.2" />
+    <PackageReference Include="System.Spatial" Version="5.8.4" />
+    <PackageReference Include="System.Text.Encoding" Version="4.3.0" />
+    <PackageReference Include="System.Text.Encoding.Extensions" Version="4.3.0" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+    <PackageReference Include="System.Threading" Version="4.3.0" />
+    <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
+    <PackageReference Include="System.Threading.Timer" Version="4.3.0" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    <PackageReference Include="System.Xml.ReaderWriter" Version="4.3.1" />
+    <PackageReference Include="System.Xml.XDocument" Version="4.3.0" />
+    <PackageReference Include="Unity.Abstractions" Version="5.11.3" />
+    <PackageReference Include="Unity.AspNet.WebApi" Version="5.11.1" />
+    <PackageReference Include="Unity.Container" Version="5.11.5" />
+    <PackageReference Include="WebActivatorEx" Version="2.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiVersions.cs" />
+    <Compile Include="App_Start\AppActivator.Broker.cs" />
+    <Compile Include="App_Start\AppActivator.cs" />
+    <Compile Include="App_Start\FormatterConfig.cs" />
+    <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="Configuration\ApiVersions.cs" />
+    <Compile Include="Configuration\ComplexTypeConfiguration.cs" />
+    <Compile Include="Configuration\GenericEntitySetConfiguration.cs" />
+    <Compile Include="Configuration\NVConfiguration.cs" />
+    <Compile Include="Configuration\EntitySetConfiguration.cs" />
+    <Compile Include="Configuration\NVEntitySetConfiguration.cs" />
+    <Compile Include="Configuration\NVServiceConfiguration.cs" />
+    <Compile Include="Controllers\NVArticleController.cs" />
+    <Compile Include="Controllers\ODataCrudController.cs" />
+    <Compile Include="Controllers\ODataBaseController.cs" />
+    <Compile Include="CustomODataUriResolver.cs" />
+    <Compile Include="DependencyRegistrar.cs" />
+    <Compile Include="HttpBasicAuthorizeAttribute.cs" />
+    <Compile Include="NVIdentityProvider.cs" />
+    <Compile Include="QueryParamHelper.cs" />
+    <Compile Include="Singletons\ECAddressService.cs" />
+    <Compile Include="Singletons\ECAnalyticsService.cs" />
+    <Compile Include="Singletons\ECArchiveService.cs" />
+    <Compile Include="Singletons\ECBatchService.cs" />
+    <Compile Include="Singletons\ECMessageService.cs" />
+    <Compile Include="Singletons\ECDocumentService.cs" />
+    <Compile Include="Singletons\ECBudgetService.cs" />
+    <Compile Include="Singletons\ECLicenseService.cs" />
+    <Compile Include="Singletons\ECPriceService.cs" />
+    <Compile Include="Singletons\ECServerFileService.cs" />
+    <Compile Include="Singletons\ECShippingService.cs" />
+    <Compile Include="Singletons\ECVoucherService.cs" />
+    <Compile Include="Singletons\ECStockService.cs" />
+    <Compile Include="Startup.AutoMapper.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="ServiceConstants.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.Validation.cs" />
+    <Compile Include="Startup.Unity.cs" />
+    <Compile Include="Startup.OData.cs" />
+    <Compile Include="Startup.Swagger.cs" />
+    <Compile Include="Startup.WebApi.cs" />
+    <Compile Include="SwaggerDefaultValues.cs" />
+    <Compile Include="ValidateModelStateFilter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="broker\4.2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lib\AutoMapper\AutoMapper.csproj">
+      <Project>{4939c5a1-f285-4e07-a51b-c63f67bb22c2}</Project>
+      <Name>AutoMapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NVShop.Core\NVShop.Core.csproj">
+      <Project>{F13F2CAB-40D2-4402-B95A-15FC345E9C90}</Project>
+      <Name>NVShop.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NVShop.Data.NV\NVShop.Data.NV.csproj">
+      <Project>{842D618E-1A5C-4CC8-9334-0DD217BFC177}</Project>
+      <Name>NVShop.Data.NV</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DataServices|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54445</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54445/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
